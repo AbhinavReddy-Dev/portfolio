@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif, Arial;
+  background-color: rgba(18, 30, 35, 1);
+}
+
+li,
+a {
+  color: #edf0f1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 80%;
+  overflow: hidden;
+  margin: auto;
+  padding: 2rem 2rem;
+  height: 100vh;
+}
+
+/* HEADER */
+.showcase img {
+  z-index: -1;
+  top: 0;
+  height: 100vh auto;
+}
+
+/* NAVIGATION BAR*/
+#navbar {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(18, 30, 35, 0.8);
+  padding: 25px 10%;
+}
+
+/* Logo*/
+.logo {
+  cursor: pointer;
+  font-weight: bold;
+  padding-bottom: 1px;
+}
+/* Nav Links*/
+#nav-links {
+  list-style: none;
+}
+#nav-links li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+#nav-links li a {
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#nav-links li:hover {
+  border-bottom: snow 1px solid;
+}
+#nav-links li a:hover {
+  color: rgb(255, 195, 121);
+}
+
+/* CONTENT */
+
+.content {
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  color: aliceblue;
+  line-height: 2rem;
+}
+.content h1 {
+  color: rgb(255, 195, 121);
+  font-weight: 900;
+  font-size: 7em;
+  margin-top: 4.1vh;
+}
+h1 {
+  border-bottom: azure solid 2px;
+  margin-bottom: 0.5em;
+}
