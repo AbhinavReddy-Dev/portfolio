@@ -24,14 +24,14 @@ a {
   height: 100vh;
 }
 
-/* HEADER */
+/* -------------------- HEADER */
 .showcase img {
   z-index: -1;
   top: 0;
   height: 100vh auto;
 }
 
-/* NAVIGATION BAR*/
+/* -------------------- NAVIGATION BAR*/
 #navbar {
   z-index: 1;
   top: 0;
@@ -44,14 +44,14 @@ a {
   padding: 25px 10%;
 }
 
-/* Logo*/
+/* -------------------- Logo*/
 .logo {
   cursor: pointer;
   font-weight: bold;
   font-size: x-large;
   padding-bottom: 1px;
 }
-/* Nav Links*/
+/* -------------------- Nav Links*/
 #nav-links {
   list-style: none;
 }
@@ -73,7 +73,7 @@ a {
   color: rgb(255, 195, 121);
 }
 
-/* CONTENT */
+/* -------------------- CONTENT */
 
 .content {
   align-items: center;
