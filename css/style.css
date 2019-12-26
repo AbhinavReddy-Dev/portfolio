@@ -21,19 +21,16 @@ a {
   overflow: hidden;
   margin: auto;
   padding: 2rem 2rem;
-  height: 100vh;
 }
 
 /* -------------------- HEADER */
-.showcase img {
-  z-index: -1;
-  top: 0;
-  height: 100vh auto;
+.showcase {
+  background: url("../assets/fimg.jpg") center / cover;
+  height: 100vh;
 }
 
 /* -------------------- NAVIGATION BAR*/
 #navbar {
-  z-index: 1;
   top: 0;
   position: fixed;
   width: 100%;
