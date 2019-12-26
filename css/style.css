@@ -11,6 +11,7 @@ body {
 
 li,
 a {
+  cursor: pointer;
   color: #edf0f1;
   text-decoration: none;
   text-transform: uppercase;
