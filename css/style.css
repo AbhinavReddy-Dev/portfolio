@@ -28,20 +28,6 @@ h3 {
   text-decoration: none;
 }
 
-.high-light {
-  font-weight: bold;
-  font-size: 35px;
-  background-color: var(--color-p2);
-  border: var(--color-p2) solid 2px;
-  padding: 3px 10px;
-}
-.high-light:hover {
-  content: "singularity_dev";
-  background-color: var(--main-color);
-  color: var(--color-p2);
-  border: white solid 2px;
-}
-
 header {
   width: 100%;
   margin: auto;
@@ -125,24 +111,6 @@ nav {
   width: 350px;
 }
 
-.go-under {
-  cursor: pointer;
-  position: absolute;
-  top: 80vh;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  text-align: center;
-}
-
-.go-under a {
-  border: solid 2px var(--color-p1);
-  padding: 15px 50px;
-  letter-spacing: 3px;
-  transition: ease;
-}
-.go-under a:hover {
-  background-color: var(--color-p1);
-}
 /* -------------------- CONTENT */
 
 .content {
