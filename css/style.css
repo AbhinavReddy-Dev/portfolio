@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Lucida Sans", Geneva, Verdana, sans-serif, Arial;
+  font-family: "Lucida Sans", "Geneva", "Verdana", "sans-serif", "Arial";
   background-color: rgba(18, 30, 35);
 }
 
@@ -29,10 +29,10 @@ h3 {
 }
 
 header {
-  width: 100%;
+  width: 90%;
   margin: auto;
   min-height: 100vh;
-  border-bottom: solid 1px whitesmoke;
+  /* border-bottom: solid 1px whitesmoke; */
 }
 
 section {
@@ -51,6 +51,7 @@ nav {
   padding: 5px 0%;
   background-color: rgba(18, 30, 35, 1);
   border-bottom: solid 1px whitesmoke;
+  border-top: solid 1px whitesmoke;
 }
 
 /* -------------------- Logo*/
@@ -95,10 +96,12 @@ nav {
 }
 .greeting h1 {
   font-family: Helvetica, sans-serif;
+  font-size: 70px;
 }
 .greeting p {
+  font-size: x-large;
   color: white;
-  padding: 0 10px;
+  padding: 0 0px;
   margin: 50px 0 0 0;
 }
 .ppimg {
@@ -108,7 +111,7 @@ nav {
   justify-content: center;
 }
 .ppimg img {
-  width: 350px;
+  width: 550px;
 }
 
 /* -------------------- CONTENT */

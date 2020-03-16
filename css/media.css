@@ -1,7 +1,7 @@
 /*-------------------- Media Queries */
 
 /*-------------------- screens with width ABOVE 855px */
-@media (min-width: 920px) {
+/* @media (min-width: 920px) {
   #nav-links li a {
     font-size: large;
   }
@@ -12,10 +12,10 @@
   #hamburger {
     display: none;
   }
-}
+} */
 
 /*-------------------- screens with width BELOW 855px */
-@media (max-width: 920px) {
+/* @media (max-width: 920px) {
   .container {
     min-height: 100vh;
   }
@@ -99,4 +99,4 @@
   position: absolute;
   top: 30px;
   right: 50px;
-}
+} */
