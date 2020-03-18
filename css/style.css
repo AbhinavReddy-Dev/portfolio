@@ -14,8 +14,12 @@ html {
 }
 
 body {
-  font-family: "Lucida Sans", "Geneva", "Verdana", "sans-serif", "Arial";
+  font-family: "Poiret One", cursive;
+  font-family: "Audiowide", cursive;
+  font-family: "Monoton", cursive;
+  font-family: "Montserrat", sans-serif;
   background-color: rgba(18, 30, 35);
+  scroll-behavior: smooth;
 }
 
 li,
@@ -29,8 +33,8 @@ h3 {
 }
 
 header {
-  width: 100%;
-  margin: auto;
+  min-width: 100vw;
+  /* margin: auto; */
   min-height: 100vh;
   /* border-bottom: solid 1px whitesmoke; */
 }
@@ -39,10 +43,13 @@ header {
 }
 
 section {
-  max-width: 100%;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
   margin: auto;
+  /* border: 5px solid white; */
+  align-items: center;
+  justify-content: center;
 }
 
 /* -------------------- NAVIGATION BAR*/
@@ -58,14 +65,27 @@ nav {
 }
 
 /* -------------------- Logo*/
-figure .logo {
+figure {
+  display: flex;
+  flex-direction: row;
   top: 2vh;
-  margin-left: 2vw;
+  margin-left: 1vw;
   position: fixed;
   cursor: pointer;
-  width: 200px;
-  height: auto;
   z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+figure .logo {
+  width: 150px;
+  height: auto;
+}
+
+figure .logo-name a {
+  font-size: large;
+  /* font-size: large; */
+  font-weight: normal;
+  letter-spacing: 2px;
 }
 /* -------------------- Nav Links*/
 #nav-links {
@@ -73,7 +93,7 @@ figure .logo {
   display: block;
   left: 15;
   margin-top: 45vh;
-  margin-left: 2vw;
+  margin-left: 1vw;
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -88,7 +108,7 @@ figure .logo {
   text-align: center;
   /* opacity: 0; */
   cursor: pointer;
-  margin: 20px 0px;
+  margin: 10px 0px;
   position: relative;
 
   padding-bottom: 0;
@@ -99,13 +119,13 @@ figure .logo {
 
 .nav-links-tab {
   background-color: white;
-  height: 50px;
-  margin: 0px 25px;
-  opacity: 0.3;
+  height: 30px;
+  margin: 0px 0px 0px 0px;
+  opacity: 0.7;
   position: relative;
   -webkit-transition: height 0.2s ease;
   transition: height 0.5s ease;
-  width: 4px;
+  width: 3px;
 }
 .nav-links li:hover {
   opacity: 1;
@@ -125,7 +145,7 @@ figure .logo {
   top: 0;
   /* -webkit-transition: opacity 0.1s ease; */
   transition: opacity 0.1s ease;
-  width: 300px;
+  width: 250px;
 }
 
 #nav-links li a:hover {
@@ -137,10 +157,18 @@ figure .logo {
 #nav-links li a {
   font-family: "Audiowide", cursive;
   opacity: 0;
+  height: 30px;
   /* font-weight: bolder; */
-  font-size: large;
-  letter-spacing: 0.5em;
-  margin: 13px 20px 0px;
+  font-size: medium;
+  letter-spacing: 0.3em;
+  border-left: solid 4px var(--color-p1);
+  background-color: var(--main-color);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /* padding-top: 2px;
+  padding-left: 20px;
+  padding-right: 30px; */
+  padding: 5px 30px 0 20px;
   text-transform: uppercase;
 }
 
@@ -150,16 +178,18 @@ figure .logo {
 }
 .pilot .greeting {
   /* padding: 0 30px;*/
-  margin: 0 20vw;
+  margin: 10vh 20vw;
   z-index: 2;
   display: flex;
   flex-direction: column;
   text-align: center;
+  /* align-items: center; */
   justify-content: center;
 }
 .greeting h1 {
   letter-spacing: 0.1em;
-  top: 20vh;
+  /* top: 20vh; */
+  margin-top: 15vh;
   font-family: "Audiowide", cursive;
   text-transform: uppercase;
   font-size: 70px;
@@ -168,13 +198,44 @@ figure .logo {
   font-family: "Poiret One", cursive;
   line-height: 2em;
   letter-spacing: 0.2em;
-  top: 40vh;
+  /* top: 40vh; */
   text-align: center;
   justify-content: center;
   font-size: xx-large;
   color: white;
   padding: 0 0px;
-  margin: 150px 0 0 0;
+  margin: 100px 0 200px 0;
+}
+.pilot .greeting .go-under {
+  z-index: 2;
+  cursor: pointer;
+  margin-bottom: 40vh;
+  /* position: absolute; */
+  /* text-align: center;
+  justify-content: center; */
+  /* margin-top: 15vh; */
+  left: 50vw;
+  /* transform: translate(-50vw, 50vw); */
+  /* text-align: center; */
+}
+
+.greeting .go-under a {
+  border: solid 2px var(--color-p1);
+  padding: 15px 150px;
+  font-family: "Poiret One", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  transition: 0.3s ease;
+}
+.greeting .go-under a:hover {
+  background-color: var(--color-p1);
+}
+/*-----Name animation-Header-----*/
+.high-light {
+  font-weight: bold;
+  font-size: 35px;
+  padding: 3px 10px;
 }
 
 /* -------------------- CONTENT */
@@ -182,28 +243,124 @@ figure .logo {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 50px;
+  height: 90%;
   padding: 2rem 2rem;
+  /* border: solid 2px wheat; */
 }
 
-p {
+.content p {
   font-family: "Poiret One", cursive;
   font-size: 20px;
   text-align: start;
   line-height: 3rem;
 }
-.content h1 {
+h1 {
+  position: relative;
   color: white;
   font-family: "Audiowide", cursive;
-
   text-transform: uppercase;
-  font-weight: 450;
-  font-size: 3em;
-  margin-top: 2vh;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 5px;
   letter-spacing: 0.5em;
 }
-h1 {
-  font-size: 50px;
-  margin-bottom: 5px;
+/* - - ABOUT - -> */
+
+#about {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+}
+
+.about-header {
+  width: 25vw;
+  background-color: #fff;
+}
+.about-header h1 {
+  top: 15vh;
+  left: 5vw;
+  color: var(--main-color);
+}
+.about-content {
+  width: 75vw;
+}
+/* - - PROTFOLIO - -> */
+
+#portfolio {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-header {
+  height: 25vh;
+  background-color: #fff;
+}
+.portfolio-header h1 {
+  top: 15vh;
+  left: 5vw;
+  color: var(--main-color);
+}
+.portfolio-content {
+  height: 75vh;
+}
+/* - - BLOGS - -> */
+
+#blogs {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.blogs-header {
+  width: 25vw;
+  background-color: #fff;
+}
+.blogs-header h1 {
+  top: 15vh;
+  left: 5vw;
+  color: var(--main-color);
+}
+.blogs-content {
+  width: 75vw;
+}
+/* - - CONTACT - -> */
+
+#contact {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact-header {
+  height: 25vh;
+  background-color: #fff;
+}
+.contact-header h1 {
+  top: 12vh;
+  /*left: 5vw; */
+  text-align: center;
+  justify-content: center;
+  color: var(--main-color);
+}
+.contact-content {
+  height: 75vh;
+  width: 100vw;
+}
+/* article .ppimg {
+  left: 20vw;
+} */
+.contact-content article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  align-content: space-evenly;
+}
+.ppimg img {
+  height: 25vh;
+  margin-top: 45vh;
+  /* border: 2px white solid; */
 }

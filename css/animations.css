@@ -1,46 +1,18 @@
 /*------take a leap button-Header------*/
-.go-under {
-  z-index: 2;
-  cursor: pointer;
-  position: absolute;
-  top: 80vh;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  text-align: center;
-}
-
-.go-under a {
-  border: solid 2px var(--color-p1);
-  padding: 15px 50px;
-  letter-spacing: 3px;
-  transition: ease;
-}
-.go-under a:hover {
-  background-color: var(--color-p1);
-}
-/*-----Name animation-Header-----*/
-.high-light {
-  font-weight: bold;
-  font-size: 35px;
-  /* background-color: var(--color-p2); */
-  /* border: var(--color-p2) solid 2px; */
-  padding: 3px 10px;
-}
-/* .high-light:hover {
-  content: "singularity_dev";
-  background-color: var(--main-color);
-  color: white;
-  border: var(--color-p2) solid 2px;
-} */
 
 /* showcase background meteor animation */
+/* .pilot .showcase-bg section {
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 1;
+} */
 .lines {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 100vw;
+  height: 90%;
+  width: 100%;
   -webkit-transform: rotate(-47deg);
   transform: rotate(-47deg);
 }
@@ -76,8 +48,8 @@
   border-bottom-left-radius: 100em;
   border-bottom-right-radius: 100em;
 
-  -webkit-animation: run 4s 0s infinite;
-  animation: run 4s 0s infinite;
+  -webkit-animation: run 2s 0s infinite;
+  animation: run 2s 0s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
@@ -85,14 +57,14 @@
 }
 .lines .line:nth-child(1) {
   margin-top: -20%;
-  margin-left: -25%;
+  margin-left: -30%;
 }
 .lines .line:nth-child(1)::after {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 .lines .line:nth-child(2) {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: -5%;
 }
 .lines .line:nth-child(2)::after {
@@ -104,8 +76,8 @@
   margin-left: 25%;
 }
 .lines .line:nth-child(3)::after {
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 @-webkit-keyframes run {
@@ -113,7 +85,7 @@
     top: -50%;
   }
   100% {
-    top: 250%;
+    top: 120%;
   }
 }
 
@@ -122,94 +94,6 @@
     top: -50%;
   }
   100% {
-    top: 250%;
+    top: 120%;
   }
 }
-
-/* .lines2 {
-  position: absolute;
-  top: 150vh;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100vw;
-  -webkit-transform: rotate(-47deg);
-  transform: rotate(-47deg);
-}
-.lines2 .line {
-  position: absolute;
-  width: 2.5px;
-  height: 200vh;
-  top: 0;
-  left: 50%;
-}
-.lines2 .line::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 15vh;
-  width: 100%;
-  left: 0;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(255, 255, 255, 0)),
-    color-stop(75%, #ffffff),
-    to(#00bfff)
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    #ffffff 75%,
-    #00bfff 100%
-  );
-  -webkit-animation: run 4s 0s infinite;
-  animation: run 4s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-}
-.lines2 .line:nth-child(1) {
-  margin-top: -20%;
-  margin-left: -25%;
-}
-.lines2 .line:nth-child(1)::after {
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-.lines2 .line:nth-child(2) {
-  margin-top: 5%;
-  margin-left: -5%;
-}
-.lines2 .line:nth-child(2)::after {
-  -webkit-animation-delay: 9s;
-  animation-delay: 9s;
-}
-.lines2 .line:nth-child(3) {
-  margin-top: 20%;
-  margin-left: 25%;
-}
-.lines2 .line:nth-child(3)::after {
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-}
-
-@-webkit-keyframes run {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 250%;
-  }
-}
-
-@keyframes run {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 250%;
-  }
-} */
