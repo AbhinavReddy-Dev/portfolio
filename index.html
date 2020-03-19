@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link rel="stylesheet" href="css/style.css" type="css/stylesheet" />
     <link rel="stylesheet" href="css/utilities.css" type="css/stylesheet" />
     <link rel="stylesheet" href="css/media.css" type="css/stylesheet" />
@@ -12,6 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Audiowide|Cinzel|Monoton|Montserrat|Poiret+One&display=swap"
       rel="stylesheet"
     />
+    <!-- <script src="https://use.fontawesome.com/4a8883cde0.js"></script> -->
     <title>Abhinav Reddy</title>
   </head>
   <body>
@@ -41,7 +43,19 @@
 
     <figure>
       <a href="#showcase"
-        ><img class="logo" src="/assets/logo/Asset 6.png" alt="logo" />
+        ><img class="logo" src="/assets/logo/logo_full_c.png" alt=""
+      /></a>
+      <a href="#showcase" class="logo-anim"
+        ><img
+          class="logo-square"
+          src="/assets/logo/logo_square_c.png"
+          alt="logo"
+        />
+        <img
+          class="logo-alpha"
+          src="/assets/logo/logo_alpha_w.png"
+          alt="logo"
+        />
       </a>
       <div class="logo-name">
         <a href="#showcase">singularityDev</a>
@@ -56,30 +70,28 @@
     <div class="layout">
       <nav id="nav">
         <ul id="nav-links">
-          <li>
+          <li id=" about-item">
             <div class="nav-links-tab"></div>
             <a class="nav-links-item" href="#about">about</a>
           </li>
-          <li>
+          <li id=" portfolio-item">
             <div class="nav-links-tab"></div>
             <a class="nav-links-item" href="#portfolio">Portfolio</a>
           </li>
-          <li>
+          <li id="blogs-item">
             <div class="nav-links-tab"></div>
-            <a class="nav-links-item" href="#blogs">blogs</a>
+            <a class="nav-links-item " href="#blogs">blogs</a>
           </li>
-          <li>
+          <li id="contact-item">
             <div class="nav-links-tab"></div>
-            <a class="nav-links-item" href="#contact">contact</a>
+            <a class="nav-links-item " href="#contact">contact</a>
           </li>
         </ul>
       </nav>
 
       <section id="about">
         <div class="about-header">
-          <header>
-            <h1>ABOUT</h1>
-          </header>
+          <h1 id="about-anim">ABOUT</h1>
         </div>
         <div class="about-content">
           <article></article>
@@ -88,9 +100,7 @@
 
       <section id="portfolio">
         <div class="portfolio-header">
-          <header>
-            <h1>PORTFOLIO</h1>
-          </header>
+          <h1 class="">PORTFOLIO</h1>
         </div>
         <div class="portfolio-content">
           <article></article>
@@ -99,9 +109,7 @@
 
       <section id="blogs">
         <div class="blogs-header">
-          <header>
-            <h1>BLOGS</h1>
-          </header>
+          <h1>BLOGS</h1>
         </div>
         <div class="blogs-content">
           <article></article>
@@ -110,18 +118,61 @@
 
       <section id="contact">
         <div class="contact-header">
-          <header>
-            <h1>CONTACT</h1>
-          </header>
+          <h1>CONTACT</h1>
         </div>
         <div class="contact-content">
-          <article>
-            <div class="social"></div>
-            <div class="ppimg">
-              <img src="/assets/logo/Asset 6.png" alt="logo" />
+          <div class="media">
+            <a
+              href="https://www.linkedin.com/in/abhinav-reddy-6397b9156/
+            "
+              target="_blank"
+              ><img
+                src="/assets/icons/linkedin.png"
+                height="60px"
+                alt="linkedin"
+            /></a>
+            <a href="https://twitter.com/Abhinav_Reddy7" target="_blank"
+              ><img src="/assets/icons/twitter.png" height="60px" alt="twitter"
+            /></a>
+            <a href="https://www.facebook.com/abhinav.merugu" target="_blank"
+              ><img
+                src="/assets/icons/facebook.png"
+                height="60px"
+                alt="facebook"
+            /></a>
+            <a href="https://www.facebook.com/abhinav.merugu" target="_blank"
+              ><img
+                src="/assets/icons/instagram2.png"
+                height="60px"
+                alt="instagram"
+            /></a>
+          </div>
+          <div class="ppimg">
+            <div class="contact-intro">
+              <h1>CODE | DESIGN UI & UX</h1>
+              <br /><br />
+              <p>
+                Drop in a message to help us exploit the untouched potential
+                ideas.
+              </p>
             </div>
-            <div class="anti-social"></div>
-          </article>
+            <div class="contact-lImg">
+              <img src="/assets/logo/logo_full_c.png" alt="logo" />
+            </div>
+            <div class="contact-bye">
+              <a href="https://github.com/singularityDev" target="_blank"
+                ><img src="/assets/icons/github.png" alt="github" height="80px"
+              /></a>
+              <div class="contact-bye-gitU">
+                <a href="https://github.com/singularityDev" target="_blank"
+                  >singularityDev</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="anti-media">
+            <p>all mobile, email, whatsapp</p>
+          </div>
         </div>
       </section>
     </div>

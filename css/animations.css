@@ -7,14 +7,14 @@
   z-index: 1;
 } */
 .lines {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: -2%;
+  left: -2%;
   right: 0;
-  height: 90%;
+  height: 100%;
   width: 100%;
-  -webkit-transform: rotate(-47deg);
-  transform: rotate(-47deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .lines .line {
   position: absolute;
@@ -36,20 +36,20 @@
     left top,
     left bottom,
     from(rgba(255, 255, 255, 0)),
-    color-stop(75%, #ffffff),
-    to(#00bfff)
+    color-stop(70%, #2eb9ff),
+    to(#666aff)
   );
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0) 0%,
-    #ffffff 75%,
-    #00bfff 100%
+    #ffffff(255, 255, 255, 0) 50%,
+    #2eb9ff 75%,
+    #666aff 100%
   );
   border-bottom-left-radius: 100em;
   border-bottom-right-radius: 100em;
 
-  -webkit-animation: run 2s 0s infinite;
-  animation: run 2s 0s infinite;
+  -webkit-animation: run 3s 0s infinite;
+  animation: run 3s 0s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
@@ -60,12 +60,12 @@
   margin-left: -30%;
 }
 .lines .line:nth-child(1)::after {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
 }
 .lines .line:nth-child(2) {
-  margin-top: 10%;
-  margin-left: -5%;
+  margin-top: 9%;
+  margin-left: -4%;
 }
 .lines .line:nth-child(2)::after {
   -webkit-animation-delay: 0s;
@@ -76,8 +76,8 @@
   margin-left: 25%;
 }
 .lines .line:nth-child(3)::after {
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s;
+  /* -webkit-animation-delay: 5.5s; */
+  animation-delay: 5s;
 }
 
 @-webkit-keyframes run {

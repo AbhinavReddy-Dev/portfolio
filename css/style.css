@@ -14,10 +14,10 @@ html {
 }
 
 body {
-  font-family: "Poiret One", cursive;
-  font-family: "Audiowide", cursive;
+  font-family: "Poiret One", "avenir medium", "verdana", "Audiowide";
+  /* font-family: , cursive;
   font-family: "Monoton", cursive;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; */
   background-color: rgba(18, 30, 35);
   scroll-behavior: smooth;
 }
@@ -33,13 +33,13 @@ h3 {
 }
 
 header {
-  min-width: 100vw;
+  width: 100vw;
   /* margin: auto; */
-  min-height: 100vh;
+  height: 100vh;
   /* border-bottom: solid 1px whitesmoke; */
 }
 .layout {
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 section {
@@ -50,6 +50,7 @@ section {
   /* border: 5px solid white; */
   align-items: center;
   justify-content: center;
+  /* z-index: 2; */
 }
 
 /* -------------------- NAVIGATION BAR*/
@@ -61,7 +62,7 @@ nav {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 5;
+  z-index: 10;
 }
 
 /* -------------------- Logo*/
@@ -72,20 +73,58 @@ figure {
   margin-left: 1vw;
   position: fixed;
   cursor: pointer;
-  z-index: 5;
+  z-index: 10;
   justify-content: center;
   align-items: center;
 }
 figure .logo {
-  width: 150px;
+  display: none;
+}
+.logo-anim {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.logo-anim .logo-square {
+  grid-column: 1;
+  grid-row: 1;
+  top: 2vh;
+  margin-left: 1vw;
+  width: 120px;
   height: auto;
+  /* z-index: 5; */
+  /* margin: 5px 10px; */
+}
+.logo-anim .logo-alpha:hover .logo-square {
+  transform: rotate(360deg);
+}
+.logo-anim .logo-alpha {
+  position: fixed;
+  grid-column: 1;
+  grid-row: 1;
+  top: 2vh;
+  margin-top: 1.2vh;
+  margin-left: 1vw;
+  width: 110px;
+  height: auto;
+  /* margin: 5px 10px; */
 }
 
-figure .logo-name a {
+.logo-name a {
+  position: fixed;
+  top: 6vh;
   font-size: large;
+  margin: 0px 30px;
   /* font-size: large; */
   font-weight: normal;
   letter-spacing: 2px;
+  background-color: var(--main-color);
+  padding: 8px 24px;
+  border: ivory solid 1px;
+}
+.logo-name a:hover {
+  background-color: white;
+  color: var(--main-color);
 }
 /* -------------------- Nav Links*/
 #nav-links {
@@ -98,7 +137,6 @@ figure .logo-name a {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50vh);
-  z-index: 5;
 }
 #nav-links li {
   float: left;
@@ -118,7 +156,7 @@ figure .logo-name a {
 } */
 
 .nav-links-tab {
-  background-color: white;
+  background-color: gray;
   height: 30px;
   margin: 0px 0px 0px 0px;
   opacity: 0.7;
@@ -155,77 +193,83 @@ figure .logo-name a {
   opacity: 1;
 }
 #nav-links li a {
-  font-family: "Audiowide", cursive;
+  font-family: "Audiowide", "avenir medium", "verdana";
   opacity: 0;
   height: 30px;
   /* font-weight: bolder; */
   font-size: medium;
   letter-spacing: 0.3em;
-  border-left: solid 4px var(--color-p1);
+  /* border: solid 1px var(--color-p2); */
   background-color: var(--main-color);
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  /* border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px; */
   /* padding-top: 2px;
   padding-left: 20px;
   padding-right: 30px; */
-  padding: 5px 30px 0 20px;
+  padding: 5px 30px 0 30px;
   text-transform: uppercase;
 }
 
 /*----------------------------------------*/
 .pilot {
   display: flex;
+  position: relative;
 }
 .pilot .greeting {
   /* padding: 0 30px;*/
-  margin: 10vh 20vw;
+  /* margin: 30vh 20vw; */
+  width: 80vw;
+  margin: auto;
   z-index: 2;
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* align-items: center; */
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* margin-right: -50%; */
+  transform: translate(-50%, -50%);
 }
 .greeting h1 {
   letter-spacing: 0.1em;
   /* top: 20vh; */
-  margin-top: 15vh;
-  font-family: "Audiowide", cursive;
+  /* margin-top: 20vh; */
+  font-family: "Audiowide", "avenir black", "verdana bold";
   text-transform: uppercase;
   font-size: 70px;
 }
 .greeting p {
-  font-family: "Poiret One", cursive;
+  font-family: "Poiret One", "avenir medium";
   line-height: 2em;
   letter-spacing: 0.2em;
-  /* top: 40vh; */
   text-align: center;
   justify-content: center;
   font-size: xx-large;
   color: white;
   padding: 0 0px;
-  margin: 100px 0 200px 0;
+  margin: 50px 0 200px 0;
 }
-.pilot .greeting .go-under {
-  z-index: 2;
+.greeting .go-under {
   cursor: pointer;
-  margin-bottom: 40vh;
+  /* margin-top: 5vh; */
   /* position: absolute; */
   /* text-align: center;
   justify-content: center; */
   /* margin-top: 15vh; */
-  left: 50vw;
+  /* left: 50vw; */
   /* transform: translate(-50vw, 50vw); */
   /* text-align: center; */
 }
 
-.greeting .go-under a {
+.go-under a {
   border: solid 2px var(--color-p1);
   padding: 15px 150px;
-  font-family: "Poiret One", cursive;
+  font-family: "Poiret One", "avenir";
   font-size: 1.5em;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
   transition: 0.3s ease;
 }
 .greeting .go-under a:hover {
@@ -260,7 +304,7 @@ figure .logo-name a {
 h1 {
   position: relative;
   color: white;
-  font-family: "Audiowide", cursive;
+  font-family: "Audiowide", "avenir black", "verdana bold";
   text-transform: uppercase;
   font-weight: 400;
   font-size: 40px;
@@ -277,35 +321,52 @@ h1 {
 
 .about-header {
   width: 25vw;
+  height: 100vh;
   background-color: #fff;
+  text-align: center;
 }
 .about-header h1 {
   top: 15vh;
-  left: 5vw;
+  left: 8px;
+  /* position: relative; */
   color: var(--main-color);
+  /* animation: mymove 2s ease-in;
+  animation-fill-mode: forwards; */
+}
+
+@keyframes mymove {
+  0% {
+    top: -5vh;
+  }
+  100% {
+    top: 15vh;
+  }
 }
 .about-content {
-  width: 75vw;
+  width: inherit;
 }
 /* - - PROTFOLIO - -> */
 
 #portfolio {
   background-color: var(--main-color);
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .portfolio-header {
-  height: 25vh;
+  height: 30vh;
+  width: 100vw;
   background-color: #fff;
+  text-align: center;
 }
 .portfolio-header h1 {
-  top: 15vh;
-  left: 5vw;
+  top: 12vh;
+  /* left: 5vw; */
   color: var(--main-color);
 }
 .portfolio-content {
-  height: 75vh;
+  height: inherit;
+  width: 100vw;
 }
 /* - - BLOGS - -> */
 
@@ -317,15 +378,18 @@ h1 {
 
 .blogs-header {
   width: 25vw;
+  height: 100vh;
   background-color: #fff;
+  text-align: center;
 }
 .blogs-header h1 {
   top: 15vh;
-  left: 5vw;
+  left: 8px;
   color: var(--main-color);
 }
 .blogs-content {
-  width: 75vw;
+  width: inherit;
+  height: 100vh;
 }
 /* - - CONTACT - -> */
 
@@ -337,7 +401,9 @@ h1 {
 
 .contact-header {
   height: 25vh;
+  width: 100vw;
   background-color: #fff;
+  text-align: center;
 }
 .contact-header h1 {
   top: 12vh;
@@ -353,14 +419,100 @@ h1 {
 /* article .ppimg {
   left: 20vw;
 } */
-.contact-content article {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.contact-content {
+  display: flex;
   column-gap: 20px;
-  align-content: space-evenly;
+  text-align: center;
+  /*justify-content: center; */
 }
-.ppimg img {
-  height: 25vh;
-  margin-top: 45vh;
-  /* border: 2px white solid; */
+.contact-content .media,
+.contact-content .ppimg,
+.contact-content .anti-media {
+  width: 90vw;
+  padding: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
+.ppimg {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.contact-intro p {
+  font-family: "Poiret One", "avenir medium";
+  line-height: 2em;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-size: x-large;
+  padding: 0 20px;
+  margin: 30px 0 10px 0;
+}
+.contact-intro h1 {
+  font-family: "Audiowide", "avenir medium", "verdana";
+  letter-spacing: 0.1em;
+}
+.contact-lImg img {
+  height: 20vh;
+}
+.contact-bye {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 5;
+}
+.contact-bye-gitU a {
+  text-align: center;
+  justify-content: center;
+  margin: 0px 20px;
+  font-size: xx-large;
+  font-weight: normal;
+  letter-spacing: 3px;
+  background-color: var(--main-color);
+  padding: 10px 60px;
+  border: ivory solid 1px;
+  cursor: pointer;
+}
+.contact-bye-gitU a:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+.media {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 200px 20px;
+  z-index: 5;
+}
+.media a {
+  border-bottom: var(--main-color) 5px solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.media a:hover {
+  background-color: var(--color-p1);
+  border-bottom: var(--color-p2) 5px solid;
+}
+.anti-media {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  z-index: 5;
+}
+/* .contact-bye p {
+  font-family: "Poiret One", "avenir medium";
+  line-height: 2em;
+  letter-spacing: 0.2em;
+  /* top: 40vh; */
+/* text-align: center;
+  justify-content: center;
+  font-size: x-large;
+  color: white;
+  padding: 0 0px;
+  margin: 10px 0 20px 0; */
