@@ -235,7 +235,7 @@ figure .logo {
   /* margin-top: 20vh; */
   font-family: "Audiowide", "avenir black", "verdana bold";
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 50px;
 }
 .greeting p {
   font-family: "Poiret One", "avenir medium";
@@ -243,7 +243,7 @@ figure .logo {
   letter-spacing: 0.2em;
   text-align: center;
   justify-content: center;
-  font-size: xx-large;
+  font-size: x-large;
   color: white;
   padding: 0 0px;
   margin: 50px 0 200px 0;
@@ -262,9 +262,9 @@ figure .logo {
 
 .go-under a {
   border: solid 2px var(--color-p1);
-  padding: 15px 150px;
+  padding: 15px 100px;
   font-family: "Poiret One", "avenir";
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 6px;
   transition: 0.3s ease;
