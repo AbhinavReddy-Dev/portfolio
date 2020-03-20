@@ -76,7 +76,7 @@
   margin-left: 25%;
 }
 .lines .line:nth-child(3)::after {
-  /* -webkit-animation-delay: 5.5s; */
+  -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
 
@@ -95,5 +95,43 @@
   }
   100% {
     top: 120%;
+  }
+}
+@keyframes walk {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 50vw;
+  }
+}
+
+.contact-header img {
+  animation: walk 10s infinite linear forwards;
+}
+.contact-header img:hover {
+  animation-play-state: paused;
+  height: 4.8vh;
+  transform: rotate(100deg);
+}
+.logo-square {
+  -webkit-animation: spin 7s linear infinite;
+  -moz-animation: spin 7s linear infinite;
+  animation: spin 7s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

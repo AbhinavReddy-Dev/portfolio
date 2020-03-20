@@ -38,9 +38,6 @@ header {
   height: 100vh;
   /* border-bottom: solid 1px whitesmoke; */
 }
-.layout {
-  /* z-index: 2; */
-}
 
 section {
   width: 100%;
@@ -50,7 +47,7 @@ section {
   /* border: 5px solid white; */
   align-items: center;
   justify-content: center;
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 /* -------------------- NAVIGATION BAR*/
@@ -85,20 +82,20 @@ figure .logo {
   grid-template-columns: 1fr;
   position: relative;
 }
-.logo-anim .logo-square {
+.logo-square {
   grid-column: 1;
   grid-row: 1;
   top: 2vh;
   margin-left: 1vw;
   width: 120px;
   height: auto;
-  /* z-index: 5; */
+  /* z-index: 11; */
   /* margin: 5px 10px; */
 }
-.logo-anim .logo-alpha:hover .logo-square {
-  transform: rotate(360deg);
-}
-.logo-anim .logo-alpha {
+/* .logo-square:hover {
+  transform: rotate(145deg);
+} */
+.logo-alpha {
   position: fixed;
   grid-column: 1;
   grid-row: 1;
@@ -326,7 +323,7 @@ h1 {
   text-align: center;
 }
 .about-header h1 {
-  top: 15vh;
+  top: 85vh;
   left: 8px;
   /* position: relative; */
   color: var(--main-color);
@@ -344,7 +341,91 @@ h1 {
 }
 .about-content {
   width: inherit;
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
 }
+
+.about-content .tech,
+.about-content .general {
+  height: 80vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: ; */
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.tech h2,
+.general h2 {
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Audiowide", "avenir black", "verdana bold";
+  letter-spacing: 4px;
+  padding: 30px 50px;
+  background-color: #fff;
+  color: var(--main-color);
+  border: var(--color-p1) solid 3px;
+}
+.p-space {
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: column;
+}
+.lang-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+.lang-icons img {
+  height: 70px;
+}
+.lang-icons h3 {
+  letter-spacing: 2px;
+  align-self: center;
+  font-size: 1.3em;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: lighter;
+}
+
+.general p,
+.tech p {
+  margin: 2vh 0;
+  font-family: "Poiret One", "avenir", "verdana";
+  font-size: x-large;
+  letter-spacing: 2px;
+  text-align: justify;
+  line-height: 1.5em;
+  /* border: darkcyan solid 2px; */
+}
+.sep-line {
+  height: 60vh;
+  background-color: lightgrey;
+  /* border-radius: 20px; */
+  width: 4px;
+  align-self: center;
+}
+.contact-header img {
+  height: 5vh;
+  position: relative;
+  top: 5.5vh;
+  /* left: -52vw; */
+  /* transform: translate(-50%, -50%); */
+  transform: rotate(90deg);
+}
+.about-content .tech {
+  /* border: solid 2px magenta; */
+}
+.about-content .general {
+  /* border: solid 2px mediumaquamarine; */
+}
+
 /* - - PROTFOLIO - -> */
 
 #portfolio {
@@ -360,7 +441,9 @@ h1 {
   text-align: center;
 }
 .portfolio-header h1 {
-  top: 12vh;
+  top: 10vh;
+  left: 35vw;
+
   /* left: 5vw; */
   color: var(--main-color);
 }
@@ -383,7 +466,7 @@ h1 {
   text-align: center;
 }
 .blogs-header h1 {
-  top: 15vh;
+  top: 85vh;
   left: 8px;
   color: var(--main-color);
 }
@@ -406,7 +489,9 @@ h1 {
   text-align: center;
 }
 .contact-header h1 {
-  top: 12vh;
+  top: 10vh;
+  left: 35vw;
+
   /*left: 5vw; */
   text-align: center;
   justify-content: center;
@@ -421,6 +506,7 @@ h1 {
 } */
 .contact-content {
   display: flex;
+  flex-direction: row;
   column-gap: 20px;
   text-align: center;
   /*justify-content: center; */
@@ -438,7 +524,14 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  /* border: mediumaquamarine solid 2px; */
+}
+.contact-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
 }
 .contact-intro p {
   font-family: "Poiret One", "avenir medium";
@@ -446,21 +539,38 @@ h1 {
   letter-spacing: 0.2em;
   text-align: center;
   font-size: x-large;
-  padding: 0 20px;
-  margin: 30px 0 10px 0;
+  padding: 10px 20px;
+  margin: 0;
+  /* border: mediumaquamarine solid 2px; */
 }
 .contact-intro h1 {
   font-family: "Audiowide", "avenir medium", "verdana";
+  font-size: 3.2em;
   letter-spacing: 0.1em;
+  margin-top: 10vh;
+  /* border: mediumaquamarine solid 2px; */
+}
+.contact-lImg-small {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
 }
 .contact-lImg img {
   height: 20vh;
+  /* border: mediumaquamarine solid 2px; */
+  /* margin-bottom: 20px; */
 }
 .contact-bye {
+  margin-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   z-index: 5;
+  /* border: mediumaquamarine solid 2px; */
+}
+.contact-bye img {
+  height: 100px;
 }
 .contact-bye-gitU a {
   text-align: center;
@@ -482,8 +592,8 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-evenly;
-  padding: 200px 20px;
+  justify-content: space-between;
+  padding: 230px 0px 170px 0px;
   z-index: 5;
 }
 .media a {
@@ -493,8 +603,15 @@ h1 {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-
+.media a img {
+  height: 60px;
+  opacity: 0.7;
+}
+.media a img:hover {
+  opacity: 1;
+}
 .media a:hover {
+  opacity: 1;
   background-color: var(--color-p1);
   border-bottom: var(--color-p2) 5px solid;
 }
@@ -502,8 +619,32 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 350px 0px 350px 0px;
+
   z-index: 5;
+}
+.anti-media h2 {
+  font-family: avenir, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}
+footer {
+  /* position: relative; */
+  text-align: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  height: 4vh;
+}
+.copyright p {
+  /* position: relative; */
+  bottom: 2vh;
+  left: 50vw;
+  /* transform: translate(-50%, -50%); */
+  font-size: large;
+  margin-top: 2.5vh;
+  /* padding-top: 2vh; */
+  color: ivory;
+  /* color: aquamarine; */
 }
 /* .contact-bye p {
   font-family: "Poiret One", "avenir medium";

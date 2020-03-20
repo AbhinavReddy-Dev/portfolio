@@ -95,6 +95,10 @@
     height: 80vh;
     width: 100vw;
   }
+  .contact-header img {
+    display: none;
+  }
+
   #portfolio {
     background-color: var(--main-color);
     display: flex;
@@ -176,52 +180,125 @@
   .contact-content {
     display: flex;
     flex-direction: column;
-    height: 80vh;
-    width: 100vw;
-    /* text-align: center; */
+    column-gap: 20px;
+    text-align: center;
+    /* border: magenta 2px solid; */
     /*justify-content: center; */
   }
-  .contact-content .media {
-    order: 1;
-  }
+  .contact-content .media,
+  .contact-content .ppimg,
   .contact-content .anti-media {
-    order: 2;
+    width: 90vw;
+    /* padding: auto; */
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
   }
-  .contact-content .ppimg {
+  .ppimg {
+    order: 1;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: space-evenly;
-    order: 3;
+    /* border: maroon 2px solid; */
+  }
+  .contact-lImg-small {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    /* border: mediumaquamarine solid 2px; */
+  }
+  .contact-intro {
+    /* padding-bottom: 30px; */
   }
   .contact-intro p {
     font-family: "Poiret One", "avenir medium";
     line-height: 2em;
     letter-spacing: 0.2em;
     text-align: center;
-    justify-content: center;
-    font-size: large;
+    font-size: x-large;
     padding: 0 20px;
-    margin: 30px 0 10px 0;
+    margin: 10px 0 10px 0;
   }
-  .contact-lImg img {
-    height: 20vh;
+  .contact-intro h1 {
+    font-family: "Audiowide", "avenir medium", "verdana";
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    margin-top: 3vh;
   }
-  .contact-bye a {
-    height: 4vh;
-    position: inherit;
+  .contact-lImg {
     text-align: center;
     justify-content: center;
-    margin: 40px 50px;
-    font-size: large;
+    /* border: mediumaquamarine solid 2px; */
+  }
+  .contact-lImg img {
+    height: 12vh;
+  }
+  .contact-bye {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+  }
+  .contact-bye img {
+    height: 70px;
+  }
+  .contact-bye-gitU a {
+    text-align: center;
+    justify-content: center;
+    margin: 0px 20px;
+    font-size: xx-large;
     font-weight: normal;
     letter-spacing: 3px;
     background-color: var(--main-color);
-    padding: 15px 60px;
+    padding: 5px 50px;
     border: ivory solid 1px;
+    cursor: pointer;
   }
-  .contact-bye a:hover {
+  .contact-bye-gitU a:hover {
     background-color: white;
     color: var(--main-color);
+  }
+  .media {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px;
+    /* border: snow 2px solid; */
+    z-index: 5;
+  }
+  .media a {
+    border-bottom: var(--main-color) 5px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .media a img {
+    height: 60px;
+  }
+  .media a:hover {
+    background-color: var(--color-p1);
+    border-bottom: var(--color-p2) 5px solid;
+  }
+  .anti-media {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    /* border: rosybrown solid 2px; */
+
+    z-index: 5;
   }
 }
 
@@ -323,6 +400,9 @@
     height: 80vh;
     width: 100vw;
   }
+  .contact-header img {
+    display: none;
+  }
   #portfolio {
     background-color: var(--main-color);
     display: flex;
@@ -404,51 +484,124 @@
   .contact-content {
     display: flex;
     flex-direction: column;
-    height: 80vh;
-    width: 100vw;
-    /* text-align: center; */
-    /*justify-content: center; */
+    column-gap: 20px;
+    text-align: center;
+    /* border: magenta 2px solid; */
+    justify-content: space-around;
   }
-  .contact-content .media {
-    order: 1;
-  }
+  .contact-content .media,
+  .contact-content .ppimg,
   .contact-content .anti-media {
-    order: 2;
+    width: 90vw;
+    /* padding: auto; */
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
   }
-  .contact-content .ppimg {
+  .ppimg {
+    order: 1;
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: space-evenly;
-    order: 3;
+    /* border: maroon 2px solid; */
+  }
+  .contact-lImg-small {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    /* border: mediumaquamarine solid 2px; */
+  }
+  .contact-intro {
+    /* padding-bottom: 30px; */
   }
   .contact-intro p {
     font-family: "Poiret One", "avenir medium";
     line-height: 2em;
     letter-spacing: 0.2em;
     text-align: center;
-    justify-content: center;
-    font-size: large;
+    font-size: x-large;
     padding: 0 20px;
-    margin: 30px 0 10px 0;
+    margin: 10px 0 10px 0;
   }
-  .contact-lImg img {
-    height: 15vh;
+  .contact-intro h1 {
+    font-family: "Audiowide", "avenir medium", "verdana";
+    font-size: 2.3em;
+    letter-spacing: 0.2em;
+    margin-top: 3vh;
   }
-  .contact-bye a {
-    height: 4vh;
-    position: inherit;
+  .contact-lImg {
     text-align: center;
     justify-content: center;
-    margin: 40px 50px;
-    font-size: large;
+    /* border: mediumaquamarine solid 2px; */
+  }
+  .contact-lImg img {
+    height: 10vh;
+  }
+  .contact-bye {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+  }
+  .contact-bye img {
+    height: 70px;
+  }
+  .contact-bye-gitU a {
+    text-align: center;
+    justify-content: center;
+    margin: 0px 20px;
+    font-size: x-large;
     font-weight: normal;
     letter-spacing: 3px;
     background-color: var(--main-color);
-    padding: 15px 60px;
+    padding: 5px 25px;
     border: ivory solid 1px;
+    cursor: pointer;
   }
-  .contact-bye a:hover {
+  .contact-bye-gitU a:hover {
     background-color: white;
     color: var(--main-color);
+  }
+  .media {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding: 0px;
+    /* border: snow 2px solid; */
+    z-index: 5;
+  }
+  .media a {
+    border-bottom: var(--main-color) 5px solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .media a img {
+    height: 45px;
+  }
+  .media a:hover {
+    background-color: var(--color-p1);
+    border-bottom: var(--color-p2) 5px solid;
+  }
+  .anti-media {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    /* border: rosybrown solid 2px; */
+
+    z-index: 5;
   }
 }
