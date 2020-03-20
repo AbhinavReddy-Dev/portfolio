@@ -87,7 +87,7 @@ figure .logo {
   grid-row: 1;
   top: 2vh;
   margin-left: 1vw;
-  width: 120px;
+  width: 100px;
   height: auto;
   /* z-index: 11; */
   /* margin: 5px 10px; */
@@ -102,21 +102,21 @@ figure .logo {
   top: 2vh;
   margin-top: 1.2vh;
   margin-left: 1vw;
-  width: 110px;
+  width: 90px;
   height: auto;
   /* margin: 5px 10px; */
 }
 
 .logo-name a {
   position: fixed;
-  top: 6vh;
-  font-size: large;
+  top: 5vh;
+  font-size: medium;
   margin: 0px 30px;
   /* font-size: large; */
   font-weight: normal;
   letter-spacing: 2px;
   background-color: var(--main-color);
-  padding: 8px 24px;
+  padding: 6px 24px;
   border: ivory solid 1px;
 }
 .logo-name a:hover {
@@ -194,7 +194,7 @@ figure .logo {
   opacity: 0;
   height: 30px;
   /* font-weight: bolder; */
-  font-size: medium;
+  font-size: small;
   letter-spacing: 0.3em;
   /* border: solid 1px var(--color-p2); */
   background-color: var(--main-color);
@@ -294,7 +294,7 @@ figure .logo {
 
 .content p {
   font-family: "Poiret One", cursive;
-  font-size: 20px;
+  font-size: px;
   text-align: start;
   line-height: 3rem;
 }
@@ -304,7 +304,7 @@ h1 {
   font-family: "Audiowide", "avenir black", "verdana bold";
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 5px;
   letter-spacing: 0.5em;
 }
@@ -331,14 +331,6 @@ h1 {
   animation-fill-mode: forwards; */
 }
 
-@keyframes mymove {
-  0% {
-    top: -5vh;
-  }
-  100% {
-    top: 15vh;
-  }
-}
 .about-content {
   width: inherit;
   display: flex;
@@ -379,6 +371,7 @@ h1 {
 .lang-icons {
   display: flex;
   flex-direction: row;
+  flex-flow: row;
   justify-content: space-between;
   margin-bottom: 5vh;
 }
