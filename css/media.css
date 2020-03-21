@@ -716,7 +716,7 @@
   .about-content {
     width: 90vw;
     min-height: auto;
-    margin: 6vh 0 0 0;
+    margin: 5vh 0;
     /* padding-top: 15vh 0; */
     display: flex;
     flex-direction: column;
@@ -747,7 +747,7 @@
     letter-spacing: 4px;
     padding: 5px 50px;
     margin-top: 0px;
-    margin-bottom: 30px;
+    /* margin-bottom: 20px; */
     font-size: 16px;
     /* background-color: #fff; */
     color: whitesmoke;
@@ -826,7 +826,7 @@
   }
   .sep-line {
     width: 60vw;
-    height: 2px;
+    height: 1px;
     margin: 20px 0px;
     background-color: lightgrey;
     /* border-radius: 20px; */
