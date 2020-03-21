@@ -69,7 +69,7 @@
     transition: 0.3s ease;
   } */
   #about {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -109,7 +109,7 @@
   }
 
   #portfolio {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -136,7 +136,7 @@
     width: 100vw;
   }
   #blogs {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -163,7 +163,7 @@
     width: 100vw;
   }
   #contact {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -383,7 +383,7 @@
     transition: 0.3s ease;
   }
   #about {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -413,7 +413,7 @@
     display: none;
   }
   #portfolio {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -440,7 +440,7 @@
     width: 100vw;
   }
   #blogs {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -467,7 +467,7 @@
     width: 100vw;
   }
   #contact {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -691,7 +691,7 @@
     transition: 0.3s ease;
   }
   #about {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -825,8 +825,8 @@
     /* border: darkcyan solid 2px; */
   }
   .sep-line {
-    width: 80vw;
-    height: 0.7px;
+    width: auto;
+    height: 1px;
     margin-top: 2px;
     background-color: lightgrey;
     /* border-radius: 20px; */
@@ -837,7 +837,7 @@
     display: none;
   }
   #portfolio {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -864,7 +864,7 @@
     width: 100vw;
   }
   #blogs {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -891,7 +891,7 @@
     width: 100vw;
   }
   #contact {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     display: flex;
     flex-direction: column;
   }
@@ -960,12 +960,13 @@
   }
   .contact-intro p {
     font-family: "Poiret One", "avenir medium";
+    width: fit-content;
     line-height: 2em;
     letter-spacing: 0.2em;
     text-align: center;
     font-size: 15px;
     padding: 0 20px;
-    margin: 10px 0 10px 0;
+    /* margin: 10px 0 10px 0; */
     /* border: mediumaquamarine solid 2px; */
   }
   .contact-intro h1 {

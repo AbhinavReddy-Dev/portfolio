@@ -18,7 +18,8 @@ body {
   /* font-family: , cursive;
   font-family: "Monoton", cursive;
   font-family: "Montserrat", sans-serif; */
-  background-color: rgba(18, 30, 35);
+  /* background-color: rgba(18, 30, 35); */
+  background-color: black;
   scroll-behavior: smooth;
 }
 
@@ -312,7 +313,7 @@ h1 {
 /* - - ABOUT - -> */
 
 #about {
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   display: flex;
   flex-direction: row;
 }
@@ -428,7 +429,7 @@ h1 {
 }
 .sep-line {
   width: 60vw;
-  height: 1px;
+  height: 2px;
   background-color: lightgrey;
   /* border-radius: 20px; */
   /* width: 4px; */
@@ -452,13 +453,13 @@ h1 {
 /* - - PROTFOLIO - -> */
 
 #portfolio {
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   display: flex;
   flex-direction: column-reverse;
 }
 
 .portfolio-header {
-  height: 30vh;
+  height: 25vh;
   width: 100vw;
   background-color: #fff;
   text-align: center;
@@ -471,13 +472,13 @@ h1 {
   color: var(--main-color);
 }
 .portfolio-content {
-  height: inherit;
+  height: 75vh;
   width: 100vw;
 }
 /* - - BLOGS - -> */
 
 #blogs {
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   display: flex;
   flex-direction: row-reverse;
 }
@@ -500,7 +501,7 @@ h1 {
 /* - - CONTACT - -> */
 
 #contact {
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   display: flex;
   flex-direction: column-reverse;
 }
@@ -537,7 +538,7 @@ h1 {
 .contact-content .media,
 .contact-content .ppimg,
 .contact-content .anti-media {
-  width: 90vw;
+  /* width: 90vw; */
   margin: auto;
   padding: auto;
   text-align: center;
@@ -558,13 +559,15 @@ h1 {
   justify-content: space-between;
 }
 .contact-intro p {
+  width: 60vw;
+  margin: auto;
   font-family: "Poiret One", "avenir medium";
   line-height: 2em;
   letter-spacing: 0.2em;
   text-align: center;
   font-size: x-large;
   padding: 10px 20px;
-  margin: 0;
+  /* margin: 0; */
   /* border: mediumaquamarine solid 2px; */
 }
 .contact-intro h1 {
@@ -616,20 +619,22 @@ h1 {
   color: var(--main-color);
 }
 .media {
+  width: 40vw;
+  margin: auto;
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: space-between;
-  padding: 100px 0px 50px 0px;
+  padding: 70px 0px 30px 0px;
   z-index: 5;
 }
-.media a {
+/* .media a {
   border-bottom: var(--main-color) 5px solid;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
-}
+} */
 .media a img {
   height: 40px;
   opacity: 1;
@@ -643,7 +648,7 @@ h1 {
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
-  padding: 50px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
 
   z-index: 5;
 }
@@ -656,7 +661,7 @@ footer {
   /* position: relative; */
   text-align: center;
   justify-content: center;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   height: 3vh;
 }
 .copyright p {
