@@ -890,7 +890,7 @@
   .contact-content .anti-media {
     width: 90vw;
     /* padding: auto; */
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
@@ -903,6 +903,7 @@
     justify-content: centers;
     /* border: mediumvioletred solid 2px; */
     /* border: maroon 2px solid; */
+    /* margin-bottom: 0; */
   }
   .contact-lImg-small {
     display: flex;
