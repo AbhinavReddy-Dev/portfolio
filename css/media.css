@@ -754,7 +754,7 @@
     border: var(--color-p1) solid 2px;
   }
   .p-space {
-    margin-top: 3vh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     /* text-align: center; */
