@@ -663,7 +663,9 @@
   .content h1 {
     font-size: 20px;
   }
-
+  .lines {
+    display: none;
+  }
   .greeting h1 {
     margin-top: 50px;
     font-size: 25px;
@@ -742,6 +744,7 @@
     font-family: "Audiowide", "avenir black", "verdana bold";
     letter-spacing: 4px;
     padding: 5px 50px;
+    margin-bottom: 10px;
     font-size: 16px;
     /* background-color: #fff; */
     color: whitesmoke;
