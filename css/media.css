@@ -816,7 +816,7 @@
 
   .general p,
   .tech p {
-    margin: 1vh 2vw;
+    margin: 1vh 1vw;
     font-family: "Poiret One", "avenir", "verdana";
     font-size: small;
     letter-spacing: 2px;
@@ -825,9 +825,9 @@
     /* border: darkcyan solid 2px; */
   }
   .sep-line {
-    width: 60vw;
-    height: 1px;
-    margin: 20px 0px;
+    width: 80vw;
+    height: 0.7px;
+    /* margin: 2px 0px; */
     background-color: lightgrey;
     /* border-radius: 20px; */
     /* width: 4px; */
