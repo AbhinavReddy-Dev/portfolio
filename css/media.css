@@ -778,7 +778,11 @@
     font-family: "Montserrat";
     font-weight: lighter;
   }
-
+  .lang-icons h4 {
+    font-size: large;
+    align-self: center;
+    color: white;
+  }
   .general p,
   .tech p {
     margin: 1vh 2vw;
