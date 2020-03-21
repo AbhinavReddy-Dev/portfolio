@@ -41,7 +41,7 @@ header {
 
 section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   margin: auto;
   /* border: 5px solid white; */
@@ -113,7 +113,7 @@ figure .logo {
   font-size: medium;
   margin: 0px 30px;
   /* font-size: large; */
-  font-weight: normal;
+  font-weight: bolder;
   letter-spacing: 2px;
   background-color: var(--main-color);
   padding: 6px 24px;
@@ -122,6 +122,7 @@ figure .logo {
 .logo-name a:hover {
   background-color: white;
   color: var(--main-color);
+  border: var(--main-color) solid 1px;
 }
 /* -------------------- Nav Links*/
 #nav-links {
@@ -332,51 +333,58 @@ h1 {
 }
 
 .about-content {
-  width: inherit;
+  width: 85vw;
+  height: 80vh;
+  margin: 3vh 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+
   /* position: relative; */
 }
 
 .about-content .tech,
 .about-content .general {
-  height: 80vh;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: inherit;
+  width: 70vw;
+  /* height: 60vh; */
+  margin: auto;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  /* justify-content: ; */
-  margin-left: 3vw;
-  margin-right: 3vw;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
 }
-.tech h2,
-.general h2 {
+
+.about-content h2 {
   align-self: center;
-  width: fit-content;
-  height: fit-content;
+  /* width: fit-content;
+  height: fit-content; */
   font-family: "Audiowide", "avenir black", "verdana bold";
   letter-spacing: 4px;
-  padding: 30px 50px;
-  background-color: #fff;
-  color: var(--main-color);
+  padding: 30px 250px;
+  /* background-color: #fff; */
+  color: whitesmoke;
   border: var(--color-p1) solid 3px;
 }
 .p-space {
-  margin-top: 6vh;
+  margin-top: 3vh;
   display: flex;
   flex-direction: column;
+  /* text-align: center; */
+  justify-content: center;
 }
 .lang-icons {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-flow: wrap;
   justify-content: center;
-  margin-bottom: 5vh;
+  margin-bottom: 1vh;
 }
 .lang-icons img {
-  width: 70px;
+  width: 80px;
   align-self: center;
+  margin: 10px 20px;
 }
 .lang-icons h3 {
   letter-spacing: 2px;
@@ -389,19 +397,20 @@ h1 {
 
 .general p,
 .tech p {
-  margin: 2vh 0;
+  margin: 2vh 2vw;
   font-family: "Poiret One", "avenir", "verdana";
   font-size: x-large;
   letter-spacing: 2px;
-  text-align: justify;
+  text-align: center;
   line-height: 1.5em;
   /* border: darkcyan solid 2px; */
 }
 .sep-line {
-  height: 60vh;
+  width: 60vw;
+  height: 2px;
   background-color: lightgrey;
   /* border-radius: 20px; */
-  width: 4px;
+  /* width: 4px; */
   align-self: center;
 }
 .contact-header img {
@@ -626,15 +635,15 @@ footer {
   text-align: center;
   justify-content: center;
   background-color: var(--main-color);
-  height: 4vh;
+  height: 3vh;
 }
 .copyright p {
   /* position: relative; */
-  bottom: 2vh;
+  margin-bottom: 2vh;
   left: 50vw;
   /* transform: translate(-50%, -50%); */
-  font-size: large;
-  margin-top: 2.5vh;
+  font-size: 12px;
+  margin-top: 1.5vh;
   /* padding-top: 2vh; */
   color: ivory;
   /* color: aquamarine; */
