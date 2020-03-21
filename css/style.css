@@ -381,6 +381,16 @@ h1 {
   justify-content: center;
   margin-bottom: 1vh;
 }
+.lang-icons-want {
+  display: flex;
+  /* flex-direction: column; */
+  flex-flow: wrap;
+  justify-content: center;
+  margin-bottom: 1vh;
+}
+.p-space .want p {
+  font-size: 20px;
+}
 .lang-icons img {
   height: 80px;
   align-self: center;
@@ -399,7 +409,8 @@ h1 {
   font-family: "Montserrat";
   font-weight: lighter;
 }
-.lang-icons h4 {
+
+.lang-icons-want h4 {
   font-size: 40px;
   align-self: center;
   color: white;

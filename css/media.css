@@ -765,21 +765,33 @@
     justify-content: center;
     margin-bottom: 1vh;
   }
-
+  .lang-icons-want {
+    display: flex;
+    /* flex-direction: column; */
+    flex-flow: wrap;
+    justify-content: center;
+    margin-bottom: 1vh;
+  }
+  .p-space .want p {
+    font-size: 20px;
+  }
   .lang-icons img {
     height: 30px;
     align-self: center;
     margin: 2px 6px;
   }
-  .lang-icons-want img {
+  /* .lang-icons-want img {
     height: 30px;
     align-self: center;
     margin: 10px 20px;
-  }
+  } */
   .lang-icons-want img {
-    height: 20px;
+    height: 25px;
     align-self: center;
-    margin: 5px 10px;
+    margin: 0px 10px;
+  }
+  .p-space .want p {
+    font-size: 12px;
   }
   .lang-icons h3 {
     letter-spacing: 2px;
@@ -794,6 +806,12 @@
     align-self: center;
     color: white;
   }
+  .lang-icons-want h4 {
+    font-size: large;
+    align-self: center;
+    color: white;
+  }
+
   .general p,
   .tech p {
     margin: 1vh 2vw;
