@@ -85,7 +85,7 @@ figure .logo {
 .logo-square {
   grid-column: 1;
   grid-row: 1;
-  top: 2vh;
+  top: 1vh;
   margin-left: 1vw;
   width: 100px;
   height: auto;
@@ -370,13 +370,13 @@ h1 {
 }
 .lang-icons {
   display: flex;
-  flex-direction: row;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 5vh;
 }
 .lang-icons img {
-  height: 70px;
+  width: 70px;
+  align-self: center;
 }
 .lang-icons h3 {
   letter-spacing: 2px;
@@ -412,12 +412,12 @@ h1 {
   /* transform: translate(-50%, -50%); */
   transform: rotate(90deg);
 }
-.about-content .tech {
-  /* border: solid 2px magenta; */
+/* .about-content .tech {
+  /* border: solid 2px magenta; 
 }
 .about-content .general {
-  /* border: solid 2px mediumaquamarine; */
-}
+  /* border: solid 2px mediumaquamarine; 
+} */
 
 /* - - PROTFOLIO - -> */
 
