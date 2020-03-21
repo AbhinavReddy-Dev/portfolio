@@ -827,7 +827,7 @@
   .sep-line {
     width: 80vw;
     height: 0.7px;
-    /* margin: 2px 0px; */
+    margin-top: 2px;
     background-color: lightgrey;
     /* border-radius: 20px; */
     /* width: 4px; */
