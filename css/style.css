@@ -9,7 +9,7 @@ html {
 :root {
   --color-p1: #666aff;
 
-  --color-p2: #2eb9ff;
+  --color-p2: #52c1f8;
   --main-color: rgb(18, 30, 35);
 }
 
@@ -117,7 +117,8 @@ figure .logo {
   font-weight: bolder;
   letter-spacing: 2px;
   background-color: var(--main-color);
-  padding: 6px 24px;
+  /* background-color: black; */
+  padding: 8px 24px;
   border: ivory solid 1px;
 }
 .logo-name a:hover {
@@ -205,7 +206,7 @@ figure .logo {
   /* padding-top: 2px;
   padding-left: 20px;
   padding-right: 30px; */
-  padding: 5px 30px 0 30px;
+  padding: 7px 30px 0 30px;
   text-transform: uppercase;
 }
 
@@ -366,7 +367,8 @@ h1 {
   padding: 30px 250px;
   /* background-color: #fff; */
   color: whitesmoke;
-  border: var(--color-p1) solid 3px;
+  /* color: var(--color-p2); */
+  border-bottom: var(--color-p2) solid 3px;
 }
 .p-space {
   margin-top: 3vh;
@@ -425,30 +427,22 @@ h1 {
   letter-spacing: 2px;
   text-align: center;
   line-height: 1.5em;
-  /* border: darkcyan solid 2px; */
 }
 .sep-line {
   width: 60vw;
   height: 2px;
   background-color: lightgrey;
-  /* border-radius: 20px; */
-  /* width: 4px; */
+
+  opacity: 0.5;
   align-self: center;
 }
 .contact-header img {
   height: 5vh;
   position: relative;
   top: 5.5vh;
-  /* left: -52vw; */
-  /* transform: translate(-50%, -50%); */
+
   transform: rotate(90deg);
 }
-/* .about-content .tech {
-  /* border: solid 2px magenta; 
-}
-.about-content .general {
-  /* border: solid 2px mediumaquamarine; 
-} */
 
 /* - - PROTFOLIO - -> */
 
@@ -610,6 +604,7 @@ h1 {
   font-weight: normal;
   letter-spacing: 3px;
   background-color: var(--main-color);
+  /* background-color: black; */
   padding: 10px 50px;
   border: ivory solid 1px;
   cursor: pointer;

@@ -77,7 +77,7 @@
   .about-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .about-header h1 {
@@ -117,7 +117,7 @@
   .portfolio-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .portfolio-header h1 {
@@ -144,7 +144,7 @@
   .blogs-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .blogs-header h1 {
@@ -171,7 +171,7 @@
   .contact-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .contact-header h1 {
@@ -391,7 +391,7 @@
   .about-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .about-header h1 {
@@ -421,7 +421,7 @@
   .portfolio-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .portfolio-header h1 {
@@ -448,7 +448,7 @@
   .blogs-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .blogs-header h1 {
@@ -475,7 +475,7 @@
   .contact-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .contact-header h1 {
@@ -679,7 +679,7 @@
     font-size: 16px;
   }
   .greeting .go-under {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .go-under a {
     border: solid 2px var(--color-p1);
@@ -699,7 +699,7 @@
   .about-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .about-header h1 {
@@ -748,10 +748,10 @@
     padding: 5px 50px;
     margin-top: 0px;
     /* margin-bottom: 20px; */
-    font-size: 16px;
+    font-size: 20px;
     /* background-color: #fff; */
     color: whitesmoke;
-    border: var(--color-p1) solid 2px;
+    /* border: var(--color-p1) solid 2px; */
   }
   .p-space {
     margin-top: 3vh;
@@ -845,7 +845,7 @@
   .portfolio-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .portfolio-header h1 {
@@ -872,7 +872,7 @@
   .blogs-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .blogs-header h1 {
@@ -899,7 +899,7 @@
   .contact-header {
     height: 20vh;
     width: 100vw;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: relative;
   }
   .contact-header h1 {
