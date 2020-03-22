@@ -644,6 +644,7 @@
   }
 
   figure .logo-name a {
+    /* display: none; */
     margin: 0px 10px;
     /* margin-bottom: 5vh; */
     font-size: 10px;
@@ -723,7 +724,7 @@
   .about-content {
     width: 90vw;
     min-height: auto;
-    margin: 15vh 0 10vh 0;
+    margin: 5vh 0 4vh 0;
     /* padding-top: 15vh 0; */
     display: flex;
     flex-direction: column;
