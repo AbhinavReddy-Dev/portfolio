@@ -904,7 +904,7 @@
   }
 
   .blogs-header {
-    height: 20vh;
+    max-height: 20vh;
     width: 100vw;
     /* background-color: #fff; */
     position: relative;
@@ -922,7 +922,33 @@
   }
   .blogs-content {
     min-height: fit-content;
-    width: 100vw;
+    width: 90vw;
+    display: flex;
+    flex-flow: column;
+    margin: 5vh auto;
+    padding: inherit;
+  }
+  .blog {
+    width: 90vw;
+    min-height: fit-content;
+    margin: 2vh auto;
+    padding: 12px;
+  }
+  .blog h2 {
+    color: black;
+    font-family: "Audiowide", "Avenir black";
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 4px 6px;
+    text-align: left;
+  }
+  .blog img {
+    margin: 5px 4px;
+    max-width: fit-content;
+    height: 15vh;
+  }
+  .blog p {
+    font-size: small;
   }
   #contact {
     /* background-color: var(--main-color); */
@@ -1043,11 +1069,7 @@
     padding: 5px 20px;
     cursor: pointer;
   }
-  .contact-bye-gitU a:hover {
-    background-color: var(--main-color);
-    color: white;
-    border: var(--color-p2) solid 1px;
-  }
+
   .media {
     order: 2;
     display: flex;
