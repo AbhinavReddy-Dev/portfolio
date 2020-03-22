@@ -116,15 +116,15 @@ figure .logo {
   /* font-size: large; */
   font-weight: bolder;
   letter-spacing: 2px;
-  background-color: var(--main-color);
-  /* background-color: black; */
+  /* background-color: ; */
+  background-color: black;
   padding: 8px 24px;
-  border: ivory solid 1px;
+  border: white solid 1px;
 }
 .logo-name a:hover {
-  background-color: white;
-  color: var(--main-color);
-  border: var(--main-color) solid 1px;
+  background-color: (var(--main-color));
+  color: white;
+  border: var(--color-p2) solid 1px;
 }
 /* -------------------- Nav Links*/
 #nav-links {
@@ -231,6 +231,9 @@ figure .logo {
   left: 50%;
   /* margin-right: -50%; */
   transform: translate(-50%, -50%);
+}
+.greeting img {
+  width: 60px;
 }
 .greeting h1 {
   letter-spacing: 0.1em;
@@ -392,7 +395,7 @@ h1 {
   margin-bottom: 1vh;
 }
 .p-space .want p {
-  font-size: 20px;
+  font-size: 22px;
 }
 .lang-icons img {
   height: 80px;
@@ -400,7 +403,7 @@ h1 {
   margin: 10px 20px;
 }
 .lang-icons-want img {
-  height: 60px;
+  height: 70px;
   align-self: center;
   margin: 10px 20px;
 }
@@ -603,15 +606,16 @@ h1 {
   font-size: x-large;
   font-weight: normal;
   letter-spacing: 3px;
-  background-color: var(--main-color);
+  background-color: black;
   /* background-color: black; */
   padding: 10px 50px;
-  border: ivory solid 1px;
+  border: white solid 1px;
   cursor: pointer;
 }
 .contact-bye-gitU a:hover {
-  background-color: white;
-  color: var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+  border: var(--color-p2) 1px solid;
 }
 .media {
   width: 40vw;
