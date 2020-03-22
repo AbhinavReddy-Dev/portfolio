@@ -210,7 +210,7 @@ figure .logo {
   /* padding-top: 2px;
   padding-left: 20px;
   padding-right: 30px; */
-  padding: 7px 30px 0 30px;
+  padding: 5px 30px 0 30px;
   text-transform: uppercase;
 }
 
@@ -327,7 +327,7 @@ h1 {
 }
 
 .about-header {
-  width: 25vw;
+  width: 20vw;
   height: 100vh;
   background-color: #fff;
   text-align: center;
@@ -465,21 +465,57 @@ h1 {
 }
 
 .portfolio-header {
-  height: 25vh;
+  height: 20vh;
   width: 100vw;
   background-color: #fff;
   text-align: center;
 }
 .portfolio-header h1 {
-  top: 10vh;
+  top: 5vh;
   left: 35vw;
 
   /* left: 5vw; */
   color: var(--main-color);
 }
 .portfolio-content {
-  height: 75vh;
+  min-height: 80vh;
   width: 100vw;
+  padding: 4vh 9vw;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.project {
+  z-index: 5;
+  width: 24vw;
+  height: fit-content;
+  margin: 1.5vh 1vw;
+  padding: 14px 18px;
+  background-color: whitesmoke;
+}
+.project h2 {
+  color: black;
+  font-family: "Audiowide", "Avenir black";
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 4px 6px;
+  text-align: left;
+}
+.project img {
+  margin: 5px 4px;
+  /* width: 18vw; */
+  height: 15vh;
+}
+.project p {
+  color: black;
+  line-height: 1.4em;
+  font-family: Avenir next, Helvetica, sans-serif;
+  font-weight: normal;
+  text-align: justify;
+}
+.project a {
+  color: blue;
+  text-decoration: cadetblue;
 }
 /* - - BLOGS - -> */
 

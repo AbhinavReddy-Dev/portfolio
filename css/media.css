@@ -868,9 +868,20 @@
     color: var(--main-color);
   }
   .portfolio-content {
-    height: 80vh;
-    width: 100vw;
+    min-height: fit-content;
+    width: 90vw;
+    display: flex;
+    flex-flow: column;
+    margin: 5vh auto;
+    padding: inherit;
   }
+  .project {
+    width: 90vw;
+    height: fit-content;
+    margin: 2vh auto;
+    padding: 12px;
+  }
+
   #blogs {
     /* background-color: var(--main-color); */
     display: flex;
