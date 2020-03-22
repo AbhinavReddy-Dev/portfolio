@@ -723,7 +723,7 @@
   }
   .about-content {
     width: 90vw;
-    min-height: 100vh;
+    min-height: fit-content;
     margin: 6vh 0 6vh 0;
     /* padding-top: 15vh 0; */
     display: flex;
@@ -877,11 +877,26 @@
   }
   .project {
     width: 90vw;
-    height: fit-content;
+    min-height: fit-content;
     margin: 2vh auto;
     padding: 12px;
   }
-
+  .project h2 {
+    color: black;
+    font-family: "Audiowide", "Avenir black";
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 4px 6px;
+    text-align: left;
+  }
+  .project img {
+    margin: 5px 4px;
+    max-width: fit-content;
+    height: 15vh;
+  }
+  .project p {
+    font-size: small;
+  }
   #blogs {
     /* background-color: var(--main-color); */
     display: flex;
@@ -906,7 +921,7 @@
     color: var(--main-color);
   }
   .blogs-content {
-    height: 80vh;
+    min-height: fit-content;
     width: 100vw;
   }
   #contact {
@@ -934,7 +949,7 @@
   }
 
   .contact-content {
-    height: 80vh;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     /* column-gap: 20px; */
@@ -947,7 +962,7 @@
   .contact-content .ppimg {
     width: 90vw;
     /* padding: auto; */
-    margin: 40px auto;
+    margin: 20px auto;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;

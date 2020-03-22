@@ -1,15 +1,15 @@
 //for hamburger menu
 
-let ham = document.getElementById("hamburger");
+// let ham = document.getElementById("hamburger");
 
-function openmenu() {
-  ham.style.width = "100%";
-  document.body.style.position = "fixed";
-}
-function closemenu() {
-  ham.style.width = "0";
-  document.body.style.position = "inherit";
-}
+// function openmenu() {
+//   ham.style.width = "100%";
+//   document.body.style.position = "fixed";
+// }
+// function closemenu() {
+//   ham.style.width = "0";
+//   document.body.style.position = "inherit";
+// }
 // document.getElementsById("about-item").onclick = function() {
 //   console.log(document.getElementsById("about-item"));
 

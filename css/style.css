@@ -483,12 +483,12 @@ h1 {
   padding: 4vh 9vw;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .project {
   z-index: 5;
-  width: 24vw;
-  height: fit-content;
+  width: 35vw;
+  max-height: 40vh;
   margin: 1.5vh 1vw;
   padding: 14px 18px;
   background-color: whitesmoke;
@@ -503,7 +503,7 @@ h1 {
 }
 .project img {
   margin: 5px 4px;
-  /* width: 18vw; */
+  max-width: 25vw;
   height: 15vh;
 }
 .project p {
