@@ -122,7 +122,7 @@ figure .logo {
   border: white solid 1px;
 }
 .logo-name a:hover {
-  background-color: (var(--main-color));
+  background-color: var(--main-color);
   color: white;
   border: var(--color-p2) solid 1px;
 }
@@ -371,64 +371,69 @@ h1 {
   /* background-color: #fff; */
   color: whitesmoke;
   /* color: var(--color-p2); */
-  border-bottom: var(--color-p2) solid 3px;
+  border-bottom: var(--color-p2) solid 2px;
 }
 .p-space {
-  margin-top: 3vh;
+  /* margin-top: 2vh; */
   display: flex;
   flex-direction: column;
   /* text-align: center; */
   justify-content: center;
 }
 .lang-icons {
+  width: 60vw;
   display: flex;
   /* flex-direction: column; */
   flex-flow: wrap;
   justify-content: center;
-  margin-bottom: 1vh;
+  margin-bottom: 0.5vh;
 }
 .lang-icons-want {
   display: flex;
   /* flex-direction: column; */
   flex-flow: wrap;
   justify-content: center;
-  margin-bottom: 1vh;
+  margin-bottom: 0.5vh;
 }
 .p-space .want p {
+  margin-top: 1vh;
   font-size: 22px;
 }
 .lang-icons img {
-  height: 80px;
-  align-self: center;
-  margin: 10px 20px;
-}
-.lang-icons-want img {
   height: 70px;
   align-self: center;
-  margin: 10px 20px;
+  margin: 20px 20px 0px 20px;
+}
+.lang-icons-want img {
+  height: 60px;
+  align-self: center;
+  margin: 15px 20px 0px 20px;
 }
 .lang-icons h3 {
+  margin-top: 20px;
   letter-spacing: 2px;
   align-self: center;
   font-size: 1.3em;
   color: white;
-  font-family: "Montserrat";
-  font-weight: lighter;
+  font-family: "Avenir";
+  font-weight: initial;
 }
 
 .lang-icons-want h4 {
+  margin-top: 15px;
   font-size: 40px;
   align-self: center;
+  /* justify-content: center; */
   color: white;
 }
 
 .general p,
 .tech p {
-  margin: 2vh 2vw;
+  margin: 2vh 2vw 0 2vw;
   font-family: "Poiret One", "avenir", "verdana";
   font-size: x-large;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: justify;
   line-height: 1.5em;
 }
 .sep-line {
@@ -674,14 +679,3 @@ footer {
   color: ivory;
   /* color: aquamarine; */
 }
-/* .contact-bye p {
-  font-family: "Poiret One", "avenir medium";
-  line-height: 2em;
-  letter-spacing: 0.2em;
-  /* top: 40vh; */
-/* text-align: center;
-  justify-content: center;
-  font-size: x-large;
-  color: white;
-  padding: 0 0px;
-  margin: 10px 0 20px 0; */

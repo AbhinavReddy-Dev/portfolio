@@ -761,13 +761,14 @@
     /* border: var(--color-p1) solid 2px; */
   }
   .p-space {
-    margin-top: 3vh;
+    margin-top: 1.5vh;
     display: flex;
     flex-direction: column;
     /* text-align: center; */
     justify-content: center;
   }
   .lang-icons {
+    width: inherit;
     display: flex;
     /* flex-direction: column; */
     flex-flow: wrap;
@@ -785,7 +786,7 @@
   .lang-icons img {
     height: 30px;
     align-self: center;
-    margin: 0px 10px;
+    margin: 5px 10px 0px 10px;
   }
 
   .lang-icons-want img {
@@ -793,10 +794,13 @@
     align-self: center;
     margin: 0px 10px;
   }
+
   .p-space .want p {
     font-size: 12px;
+    text-align: center;
   }
   .lang-icons h3 {
+    margin-top: 0px;
     letter-spacing: 2px;
     align-self: center;
     font-size: 10px;
@@ -810,6 +814,8 @@
     color: white;
   }
   .lang-icons-want h4 {
+    margin-top: 0px;
+
     font-size: large;
     align-self: center;
     color: white;
@@ -821,7 +827,7 @@
     font-family: "Poiret One", "avenir", "verdana";
     font-size: small;
     letter-spacing: 2px;
-    text-align: center;
+    text-align: justify;
     line-height: 1.5em;
     /* border: darkcyan solid 2px; */
   }
@@ -1011,7 +1017,7 @@
     cursor: pointer;
   }
   .contact-bye-gitU a:hover {
-    background-color: (var(--main-color));
+    background-color: var(--main-color);
     color: white;
     border: var(--color-p2) solid 1px;
   }
