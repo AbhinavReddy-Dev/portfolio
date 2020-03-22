@@ -79,6 +79,7 @@ figure .logo {
   display: none;
 }
 .logo-anim {
+  left: 1vw;
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
@@ -87,7 +88,7 @@ figure .logo {
   grid-column: 1;
   grid-row: 1;
   top: 1vh;
-  margin-left: 1vw;
+  /* margin-left: 1vw; */
   width: 100px;
   height: auto;
   /* z-index: 11; */
@@ -101,18 +102,20 @@ figure .logo {
   grid-column: 1;
   grid-row: 1;
   top: 2vh;
-  margin-top: 1.2vh;
-  margin-left: 1vw;
+  margin-top: 1.3vh;
+  /* margin-left: 1vw; */
   width: 90px;
   height: auto;
   /* margin: 5px 10px; */
 }
-
-.logo-name a {
+.logo-name {
   position: fixed;
   top: 5vh;
+  right: 2vw;
+}
+.logo-name a {
   font-size: medium;
-  margin: 0px 30px;
+  /* margin: 0px 30px; */
   /* font-size: large; */
   font-weight: bolder;
   letter-spacing: 2px;
@@ -199,7 +202,7 @@ figure .logo {
   /* font-weight: bolder; */
   font-size: small;
   letter-spacing: 0.3em;
-  /* border: solid 1px var(--color-p2); */
+  border: solid 1px var(--color-p2);
   background-color: var(--main-color);
   /* border-top-right-radius: 50px;
   border-bottom-right-radius: 50px; */
