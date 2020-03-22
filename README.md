@@ -1,3 +1,3 @@
 # portfolio
 
-Experimenting with HTML, CSS and JavaScript to learn the ropes of fluent programming.
+Experimenting with HTML and CSS to learn the ropes of designing and structuring a responsive webite.
