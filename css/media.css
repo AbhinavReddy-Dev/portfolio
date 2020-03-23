@@ -441,7 +441,10 @@
     padding: 10px 45px;
     cursor: pointer;
   }
-
+  .contact-bye-gitU a:hover {
+    background-color: var(--main-color);
+    border: var(--color-p2) solid 1px;
+  }
   .media {
     order: 2;
     display: flex;
@@ -933,7 +936,10 @@
     padding: 5px 20px;
     cursor: pointer;
   }
-
+  .contact-bye-gitU a:hover {
+    background-color: var(--main-color);
+    border: var(--color-p2) solid 1px;
+  }
   .media {
     order: 2;
     display: flex;

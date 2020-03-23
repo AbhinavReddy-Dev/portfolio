@@ -705,6 +705,10 @@ h1 {
   border: white solid 1px;
   cursor: pointer;
 }
+.contact-bye-gitU a:hover {
+  background-color: var(--main-color);
+  border: var(--color-p2) solid 1px;
+}
 
 .media {
   width: 40vw;
