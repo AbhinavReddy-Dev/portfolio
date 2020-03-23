@@ -664,7 +664,7 @@
   }
 
   .p-space .want p {
-    font-size: 12px;
+    font-size: large;
     text-align: center;
   }
   .lang-icons h3 {
@@ -698,6 +698,9 @@
     text-align: justify;
     line-height: 1.5em;
     /* border: darkcyan solid 2px; */
+  }
+  .tech p {
+    font-size: large;
   }
   .sep-line {
     width: auto;
@@ -759,10 +762,10 @@
   .project img {
     margin: 5px 4px;
     max-width: fit-content;
-    height: 15vh;
+    height: 30vh;
   }
   .project p {
-    font-size: small;
+    font-size: 12px;
   }
   #blogs {
     /* background-color: var(--main-color); */
@@ -812,10 +815,10 @@
   .blog img {
     margin: 5px 4px;
     max-width: fit-content;
-    height: 15vh;
+    height: 30vh;
   }
   .blog p {
-    font-size: small;
+    font-size: 12px;
   }
   #contact {
     /* background-color: var(--main-color); */
