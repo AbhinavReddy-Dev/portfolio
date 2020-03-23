@@ -47,10 +47,10 @@
 
   .greeting h1 {
     margin-top: 5vh;
-    font-size: 55px;
+    font-size: 45px;
   }
   .greeting p {
-    font-size: xx-large;
+    font-size: x-large;
   }
   /* .greeting .go-under {
     /* margin-bottom: 50px; 
@@ -296,14 +296,14 @@
     min-height: fit-content;
     width: 90vw;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     margin: 2vh auto;
     padding: inherit;
   }
   .blog {
-    width: 90vw;
+    width: 40vw;
     min-height: fit-content;
-    margin: 2vh auto;
+    margin: 2vh 2vw;
     padding: 12px;
   }
   .blog h2 {
