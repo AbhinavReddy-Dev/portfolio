@@ -232,8 +232,8 @@
   }
   .project img {
     margin: 10px 4px;
-    max-width: fit-content;
-    height: 25vh;
+    max-width: 80vw;
+    max-height: 30vh;
   }
   .project p {
     font-size: medium;
@@ -260,7 +260,8 @@
     color: var(--main-color);
   }
   .blogs-content {
-    min-height: fit-content;
+    /* max-height: none; */
+    min-height: 40vh;
     width: 90vw;
     display: flex;
     flex-flow: row;
@@ -269,7 +270,7 @@
   }
   .blog {
     width: 40vw;
-    min-height: fit-content;
+    min-height: 35vh;
     margin: 2vh 2vw;
     padding: 12px;
   }
@@ -283,8 +284,8 @@
   }
   .blog img {
     margin: 10px 4px;
-    max-width: fit-content;
-    height: 25vh;
+    max-width: 35vw;
+    max-height: 25vh;
   }
   .blog p {
     font-size: medium;
@@ -680,8 +681,8 @@
   }
   .project img {
     margin: 5px 4px;
-    max-width: fit-content;
-    height: 30vh;
+    max-width: 80vw;
+    max-height: 30vh;
   }
   .project p {
     font-size: 12px;
@@ -731,8 +732,8 @@
   }
   .blog img {
     margin: 5px 4px;
-    max-width: fit-content;
-    height: 30vh;
+    max-width: 80vw;
+    max-height: 30vh;
   }
   .blog p {
     font-size: 12px;
@@ -1138,8 +1139,8 @@
   }
   .project img {
     margin: 5px 4px;
-    max-width: fit-content;
-    height: 15vh;
+    max-width: 80vw;
+    max-height: 25vh;
   }
   .project p {
     font-size: small;
@@ -1190,7 +1191,7 @@
   .blog img {
     margin: 5px 4px;
     max-width: fit-content;
-    height: 15vh;
+    max-height: 25vh;
   }
   .blog p {
     font-size: small;
